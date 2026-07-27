@@ -25,4 +25,4 @@ python3 -m http.server 8000
 
 This repo is set up to deploy via GitHub Pages from the `main` branch root.
 Once pushed, enable Pages under **Settings → Pages → Source: main / root**.
-The site will be live at `https://mathishard17.github.io/<repo-name>/`.
+The site will be live at `https://zsophiaaa.github.io/<repo-name>/`.
