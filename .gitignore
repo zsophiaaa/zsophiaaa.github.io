@@ -1,6 +1,7 @@
 .DS_Store
 
 cv.tex
+make.sh
 
 # LaTeX build artifacts
 *.aux
