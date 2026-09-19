@@ -1,13 +1,6 @@
 // Single source of truth for projects. Rendered on the home page (carousel)
-// and on projects.html (full grid). Newest first. To add a project, add an entry here.
+// and on projects.html (full grid). Order here is display order. To add a project, add an entry here.
 const PROJECTS = [
-  {
-    meta: "Sep 2026 · Personal",
-    title: "Skating Choreographer",
-    desc: "A browser-based figure skating choreography tool with a 3D skater, music sync, and tracings computed from edge notation. Includes agent skills and a headless verifier so an AI can build a skatable program and prove it with numbers.",
-    tags: ["JavaScript", "3D", "Agents"],
-    link: { href: "https://github.com/zsophiaaa/skating-choreographer", label: "View on GitHub" },
-  },
   {
     meta: "Summer 2026 · Alpha School",
     title: "GRPO-Trained LLM Tutor",
@@ -20,6 +13,13 @@ const PROJECTS = [
     desc: "Competed with a team of MIT freshmen. I built for the training and inference scaffolding (vLLM, Unsloth), hidden-state extraction, and parameter sweeps, and wrote the team's technical writeup.",
     tags: ["PyTorch", "vLLM", "Unsloth"],
     link: { href: "https://www.kaggle.com/competitions/ai-mathematical-olympiad-progress-prize-3/writeups/aimo-3-writeup", label: "Read my technical writeup" },
+  },
+  {
+    meta: "Sep 2026 · Personal",
+    title: "Skating Choreographer",
+    desc: "A browser-based figure skating choreography tool with a 3D skater, music sync, and tracings computed from edge notation. Includes agent skills and a headless verifier so an AI can build a skatable program and prove it with numbers.",
+    tags: ["JavaScript", "3D", "Agents"],
+    link: { href: "https://github.com/zsophiaaa/skating-choreographer", label: "View on GitHub" },
   },
 ];
 
