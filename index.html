@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sophia Zhang</title>
   <meta name="description" content="Sophia Zhang — CS & Math at MIT. AI research, quant, and math olympiads." />
+  <link rel="canonical" href="https://zsophiaaa.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sophia Zhang" />
+  <meta property="og:description" content="CS & Math at MIT. AI research, quant, and math olympiads." />
+  <meta property="og:url" content="https://zsophiaaa.github.io/" />
+  <meta property="og:image" content="https://zsophiaaa.github.io/photo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@zsophiaaa17" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111827'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' fill='%23fff' text-anchor='middle'%3ESZ%3C/text%3E%3C/svg%3E" />
+  <script>
+    // Apply saved/system theme before first paint so dark mode doesn't flash white.
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (saved === "dark" || (!saved && prefersDark)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
@@ -16,17 +37,15 @@
       <a href="#" class="nav-brand">Sophia Zhang</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#awards">Awards</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
-            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-          </button>
-        </li>
       </ul>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
     </nav>
   </header>
 
@@ -38,8 +57,9 @@
         <h1>Sophia Zhang</h1>
         <img class="hero-photo" src="photo.jpg" alt="Sophia Zhang" />
       </div>
+      <p class="tagline">CS &amp; Math at MIT, class of 2028.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#experience">View my work</a>
+        <a class="btn btn-primary" href="#publications">View my work</a>
         <a class="btn btn-ghost" href="#contact">Get in touch</a>
       </div>
     </section>
@@ -67,46 +87,7 @@
           <div class="timeline-body">
             <h3>B.S. in Computer Science &amp; Math</h3>
             <p class="timeline-org">Massachusetts Institute of Technology · Cambridge, MA</p>
-            <p>Intended graduation May 2028. Selected Coursework: Inference &amp; Information (G), Probability (G), Machine Learning (G), Computational Structures.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2 class="section-title">Experience</h2>
-      <ol class="timeline">
-        <li class="timeline-item">
-          <div class="timeline-meta">Jun — Aug 2026</div>
-          <div class="timeline-body">
-            <h3>AI Engineering Intern</h3>
-            <p class="timeline-org">Alpha School · Austin, TX</p>
-            <p>AI in education: app dev, model training/evals, and leveraging agents.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-meta">Sep 2025 — Present</div>
-          <div class="timeline-body">
-            <h3>Undergraduate Researcher (UROP)</h3>
-            <p class="timeline-org">Dina Katabi's Lab, MIT CSAIL · Cambridge, MA</p>
-            <p>Working with multimodal data, primarily EEG and breathing signals.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-meta">Jan 2026</div>
-          <div class="timeline-body">
-            <h3>Trading &amp; Technology Intern</h3>
-            <p class="timeline-org">Hudson River Trading · New York City, NY</p>
-            <p>Software engineering and quant research; traded Brazilian equities.</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <div class="timeline-meta">Jun 2025 — Jan 2026</div>
-          <div class="timeline-body">
-            <h3>Research Collaborator — LLMs for Formal Theorem Proving</h3>
-            <p class="timeline-org">Microsoft Research Asia · Remote</p>
-            <p>Lean proof verification and system improvements; two papers below.</p>
+            <p>Intended graduation May 2028. Selected Coursework: Inference &amp; Information (G), Probability (G), Machine Learning (G), TinyML and Efficient AI Computing (G), Operating Systems, Computation Structures.</p>
           </div>
         </li>
       </ol>
@@ -119,12 +100,12 @@
         <li class="timeline-item">
           <div class="timeline-meta">ICML 2026</div>
           <div class="timeline-body">
-            <h3><a href="https://www.microsoft.com/en-us/research/publication/euclean-automated-geometry-problem-formalization-with-unified-verification-in-lean-2/" target="_blank" rel="noopener">Euclean: Automated Geometry Problem Formalization with Unified Verification in Lean</a></h3>
+            <h3><a href="https://arxiv.org/abs/2607.19374" target="_blank" rel="noopener">Euclean: Automated Geometry Problem Formalization with Unified Verification in Lean</a></h3>
             <p class="authors">Linbin Tang, Jingyan You, Zilin Kang, Hanzhang Liu, <strong>Sophia Zhang</strong>, Zenan Li, Chenrui Cao, Liangcheng Song, Jiaao Wu, Xian Zhang, Fan Yang</p>
           </div>
         </li>
         <li class="timeline-item">
-          <div class="timeline-meta">2026</div>
+          <div class="timeline-meta">arXiv 2026</div>
           <div class="timeline-body">
             <h3><a href="https://arxiv.org/abs/2605.19338" target="_blank" rel="noopener">STAR-PólyaMath: Multi-Agent Reasoning under Persistent Meta-Strategic Supervision</a></h3>
             <p class="authors">Jiaao Wu, Xian Zhang, Hanzhang Liu, <strong>Sophia Zhang</strong>, Fan Yang, Yinpeng Dong</p>
@@ -133,11 +114,64 @@
       </ol>
     </section>
 
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">Sep 2025 — Present</div>
+          <div class="timeline-body">
+            <h3>Undergraduate Researcher (UROP)</h3>
+            <p class="timeline-org">Dina Katabi's Lab, MIT CSAIL · Cambridge, MA</p>
+            <p>Working with diffusion models, multimodal foundation models, and recommendation models.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Jun — Aug 2026</div>
+          <div class="timeline-body">
+            <h3>AI Engineering Intern</h3>
+            <p class="timeline-org">Alpha School · Austin, TX</p>
+            <p>Built RL (GRPO) training setups and evaluations for LLM tutors and educational apps, grounded in learning science and pedagogy.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Jan 2026</div>
+          <div class="timeline-body">
+            <h3>Trading &amp; Technology Intern</h3>
+            <p class="timeline-org">Hudson River Trading · New York City, NY</p>
+            <p>Software engineering and quant research projects, including trading Brazilian equities.</p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-meta">Jun 2025 — Jan 2026</div>
+          <div class="timeline-body">
+            <h3>Research Collaborator — LLMs for Formal Theorem Proving</h3>
+            <p class="timeline-org">Microsoft Research Asia · Remote</p>
+            <p>Verified Lean formalizations of math proofs and contributed to system improvements. Co-author on Euclean (ICML 2026) and STAR-PólyaMath.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects (rendered from projects.js) -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2 class="section-title">Projects</h2>
+        <a class="see-all" href="projects.html">See all &rarr;</a>
+      </div>
+      <div class="carousel-wrap">
+        <button class="carousel-btn carousel-prev" id="projects-prev" type="button" aria-label="Previous projects">&lsaquo;</button>
+        <div class="cards carousel" id="project-cards"></div>
+        <button class="carousel-btn carousel-next" id="projects-next" type="button" aria-label="Next projects">&rsaquo;</button>
+      </div>
+    </section>
+
     <!-- Awards -->
     <section id="awards" class="section">
       <h2 class="section-title">Awards</h2>
       <ul class="awards">
         <li><span class="award-year">2026</span><span>Putnam Top 200</span></li>
+        <li><span class="award-year">2025</span><span>USAMO Silver</span></li>
         <li><span class="award-year">2023, 2024</span><span>Mathematical Olympiad Program (MOP) — Two-time Attendee</span></li>
       </ul>
     </section>
@@ -146,15 +180,15 @@
     <section id="contact" class="section">
       <h2 class="section-title">Contact</h2>
       <p class="contact-intro">
-        Reach me at
-        <span class="email">zsophia [at] mit [dot] edu</span>, or through any of these.
+        Reach me at <a class="email" href="mailto:zsophia@mit.edu">zsophia@mit.edu</a>, or through any of these.
       </p>
       <div class="links">
         <a class="link-subtle" href="mailto:zsophia@mit.edu">Email</a>
-        <a class="link-subtle" href="https://github.com/zsophiaaa" target="_blank" rel="noopener">GitHub</a>
-        <a class="link-subtle" href="https://linkedin.com/in/sophia-z-643072238/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="link-subtle" href="https://x.com/zsophiaaa17" target="_blank" rel="noopener">Twitter / X</a>
-        <a class="link-subtle" href="CV.pdf" target="_blank" rel="noopener">Résumé</a>
+        <a class="link-subtle" href="https://github.com/zsophiaaa" target="_blank" rel="me noopener">GitHub</a>
+        <a class="link-subtle" href="https://linkedin.com/in/sophia-z-643072238/" target="_blank" rel="me noopener">LinkedIn</a>
+        <a class="link-subtle" href="https://x.com/zsophiaaa17" target="_blank" rel="me noopener">X</a>
+        <a class="link-subtle" href="https://curius.app/sophia-zhang" target="_blank" rel="noopener">Curius</a>
+        <a class="link-subtle" href="CV.pdf" target="_blank" rel="noopener">CV</a>
       </div>
     </section>
   </main>
@@ -163,27 +197,27 @@
     <p>© <span id="year"></span> Sophia Zhang</p>
   </footer>
 
+  <script src="projects.js"></script>
   <script>
+    renderProjects(document.getElementById("project-cards"));
+    initCarousel(
+      document.getElementById("project-cards"),
+      document.getElementById("projects-prev"),
+      document.getElementById("projects-next")
+    );
+
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    (function () {
+    document.getElementById("theme-toggle").addEventListener("click", function () {
       const root = document.documentElement;
-      const saved = localStorage.getItem("theme");
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (saved === "dark" || (!saved && prefersDark)) {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      if (isDark) {
+        root.removeAttribute("data-theme");
+      } else {
         root.setAttribute("data-theme", "dark");
       }
-      document.getElementById("theme-toggle").addEventListener("click", function () {
-        const isDark = root.getAttribute("data-theme") === "dark";
-        if (isDark) {
-          root.removeAttribute("data-theme");
-          localStorage.setItem("theme", "light");
-        } else {
-          root.setAttribute("data-theme", "dark");
-          localStorage.setItem("theme", "dark");
-        }
-      });
-    })();
+      try { localStorage.setItem("theme", isDark ? "light" : "dark"); } catch (e) {}
+    });
   </script>
 </body>
 </html>

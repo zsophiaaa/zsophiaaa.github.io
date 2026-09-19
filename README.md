@@ -4,8 +4,11 @@ A clean, minimal personal website built with plain HTML & CSS. No build step req
 
 ## Structure
 
-- `index.html` — all page content (About, Projects, Experience, Contact)
-- `style.css` — styling (clean white theme)
+- `index.html` — home page (About, Education, Publications, Experience, Projects, Awards, Contact)
+- `projects.html` — the full projects list
+- `projects.js` — the project data; both pages render their cards from this, so add new projects here
+- `style.css` — styling (light/dark theme)
+- `cv.tex` → `CV.pdf` — CV source; rebuild with `./make.sh` (needs BasicTeX/MacTeX)
 
 ## Editing
 
@@ -25,4 +28,4 @@ python3 -m http.server 8000
 
 This repo is set up to deploy via GitHub Pages from the `main` branch root.
 Once pushed, enable Pages under **Settings → Pages → Source: main / root**.
-The site will be live at `https://zsophiaaa.github.io/<repo-name>/`.
+The site is live at <https://zsophiaaa.github.io/>.

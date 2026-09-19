@@ -10,3 +10,5 @@ make.sh
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+# Previous headshot, kept locally
+photo-old.jpg
